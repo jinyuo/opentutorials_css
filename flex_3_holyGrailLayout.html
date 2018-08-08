@@ -1,0 +1,81 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+
+        header {
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+        
+        .content{
+            display: flex;
+        }
+        
+        main{
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            padding: 10px;
+/*
+            flex-basis: 300px;
+            flex-shrink: 0;
+*/
+        }
+        
+        footer{
+            border-top: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+            padding: 10px;
+        }
+/*
+        nav{
+            order: 0;
+        }
+*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam tenetur, culpa fuga nihil quidem aut vel. Maxime, itaque quaerat sit deserunt distinctio iure id! Placeat doloremque alias inventore illum, excepturi ipsum est accusantium odio iusto voluptas nulla aperiam voluptatum omnis voluptates doloribus quod sequi quos, explicabo eum in, consequatur.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

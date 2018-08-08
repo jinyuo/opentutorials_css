@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        a {
+            font-size: 3rem;
+            display: inline-block;
+        }
+
+        a:active {
+            transform: translate(20px, 20px);
+            font-size: 2rem;
+            /*a 태그에 대한 모든 효과에 대해 변화가 일어났을 때 전환 발생. 지정할 때는 띄어쓰기로 구분*/
+            transition-property: all;
+            /*장면 전환이 1초에 걸쳐 완료된다.*/
+            transition-duration: .5s;
+            transition-delay: .5s;
+            /*복수 효과는 반점으로 구분, 효과마다 다른 시간 지정 가능₩*/
+            /*== transition-: all 1s;*/
+        }
+    </style>
+</head>
+
+<body>
+    <!--클릭해도 페이지 이동 없음-->
+    <a href="#">Click</a>
+</body>
+</html>

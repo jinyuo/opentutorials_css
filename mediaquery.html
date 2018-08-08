@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+   <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+        /*       코드 순서 중요 나중에 오는 코드의 캐스캐이딩 우선순위가 높다.*/
+
+        ul li{
+            color: white;
+        }
+        @media(max-width:600px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        @media(max-width:500px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media(min-width:600px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        @media(min-width:701px) {
+            body {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   <ul>
+       <li>~500px : red</li>
+       <li>501~600px : green</li>
+       <li>601~700px : blue</li>
+       <li>701px~ : black</li>
+   </ul>
+      
+</body>
+</html>

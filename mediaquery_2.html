@@ -1,0 +1,117 @@
+<!doctype>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        /*
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+*/
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            /*            width: 800px;*/
+            border: 1px solid gray;
+        }
+
+        header {
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        main {
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            padding: 10px;
+            /*
+            flex-basis: 300px;
+            flex-shrink: 0;
+*/
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav,
+        aside {
+            flex-basis: 150px;
+            flex-shrink: 0;
+            padding: 10px;
+        }
+
+        @media(max-width:500px) {
+            .content {
+                flex-direction: column;
+            }
+            main {
+                order: 0;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid gray;
+                padding: 10px;
+            }
+
+            nav,
+            aside {
+                flex-basis: auto;
+                flex-shrink: 0;
+                padding: 10px;
+            }
+            
+            nav{
+                order: 1;
+                border-bottom: 1px solid gray;
+                
+            }
+            
+            aside{
+                order: 2;
+            }
+        }
+
+        /*
+        nav{
+            order: 0;
+        }
+*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium deleniti, consectetur animi architecto officiis? Consectetur quae itaque voluptas quam nostrum odio quaerat sed perferendis omnis, accusamus numquam hic, sint nulla porro, accusantium autem qui cum aut reiciendis illum earum quia ipsum! Deserunt molestias aliquid enim exercitationem! Dignissimos sed atque ducimus error, adipisci quis voluptatem beatae nemo nostrum enim impedit officia doloribus dicta numquam debitis laudantium velit aliquid. Veniam qui repellat cupiditate nostrum ipsum laudantium quis, iste fugiat asperiores quasi accusantium explicabo recusandae magni deleniti quibusdam rem. Ut reprehenderit, illum similique molestiae incidunt distinctio, mollitia odit maiores repudiandae voluptatibus voluptates, voluptatem!
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
